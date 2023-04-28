@@ -4,12 +4,12 @@ manifests:
   rawYaml:
     - ./infra/k8s/*
 build:
-  # local:
-  # push: false
-  googleCloudBuild:
-    projectId: pacific-destiny-272718
+  local:
+    push: false
+  #googleCloudBuild:
+    #projectId: pacific-destiny-272718
   artifacts:
-    - image: us.gcr.io/pacific-destiny-272718/auth
+    - image: koushik80/auth #us.gcr.io/pacific-destiny-272718/auth
       context: auth
       docker:
         dockerfile: Dockerfile
