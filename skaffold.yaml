@@ -6,8 +6,10 @@ manifests:
 build:
   local:
     push: false
+  googleCloudBuild:
+    projectID: pacific-destiny-272718
   artifacts:
-    - image: koushik80/auth
+    - image: us.gcr.io/pacific-destiny-272718/auth
       context: auth
       docker:
         dockerfile: Dockerfile
