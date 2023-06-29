@@ -14,7 +14,7 @@ const signup = () => {
     onSuccess: () => Router.push('/')
   });
 
-  const onSubmit = async (e) => {
+  const onSubmit = async e => {
     e.preventDefault();
 
     await doRequest();
@@ -28,8 +28,9 @@ const signup = () => {
         <input
            value={email}
            onChange={e => setEmail(e.target.value)}
-           className="form-control">
-        </input>
+           className="form-control"
+        />
+        
       </div>
       <div className="form-group">
         <label>Password</label>
@@ -37,7 +38,8 @@ const signup = () => {
            value={password}
            onChange={e => setPassword(e.target.value)}
            type="password"
-           className="form-control"></input>
+           className="form-control"
+        />
       </div>
       {errors}
       <button className="btn btn-primary">Sign Up</button>
