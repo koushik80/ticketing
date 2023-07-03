@@ -30,7 +30,6 @@ const signup = () => {
            onChange={e => setEmail(e.target.value)}
            className="form-control"
         />
-        
       </div>
       <div className="form-group">
         <label>Password</label>
