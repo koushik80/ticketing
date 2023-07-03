@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-
 const buildClient = () => {
   if (typeof window === 'undefined') {
 
