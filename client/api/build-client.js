@@ -8,7 +8,6 @@ const buildClient = ({ req }) => {
       headers: req.headers,
     });
   } else {
-
     return axios.create({
       baseURL: '/',
     });
