@@ -12,6 +12,7 @@ export default ({ url, method, body, onSuccess }) => {
       if (onSuccess) {
         onSuccess(response.data);
       }
+
       return response.data;
     } catch (err) {
       setErrors(
