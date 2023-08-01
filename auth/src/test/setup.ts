@@ -9,7 +9,9 @@ declare global {
 
 let mongo: any;
 beforeAll(async () => {
-  process.env.JWT_KEY = '123456'
+  process.env.JWT_KEY = '123456';
+  process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+  
   const mongo = await MongoMemoryServer.create();
   const mongoUri = mongo.getUri();
 
