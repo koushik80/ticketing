@@ -21,10 +21,41 @@ it('returns a status other 401 if the user is signed in', async () => {
 });
 
 it('returns an error if an invalid title is provided', async () => {
+  await request(app)
+    .post('/api/tickets')
+    .set('Cookie', global.signin())
+    .send({
+      title: '',
+      price: 10,
+    })
+    .expect(400);
 
+  await request(app)
+    .post('/api/tickets')
+    .set('Cookie', global.signin())
+    .send({
+      price: 10,
+    })
+    .expect(400);
 });
 
 it('returns an error if invalid price is provided', async () => {
+  await request(app)
+    .post('/api/tickets')
+    .set('Cookie', global.signin())
+    .send({
+      title: 'abkjdmnh',
+      price: -10,
+    })
+    .expect(400);
+  
+  await request(app)
+    .post('/api/tickets')
+    .set('Cookie', global.signin())
+    .send({
+      title: 'abgmklf',
+    })
+    .expect(400);
 
 });
 
