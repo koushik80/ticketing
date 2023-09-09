@@ -5,6 +5,7 @@
 <p align="left">kubectl get pods</p>
 <p align="left">kubectl describe pod [pod name]</p>
 <p align="left">skaffold dev</p>
+<p align="left">npm run dev</p>
 
 <p align="left">kubectl get secrets</p>
 <p align="left">kubectl create secret generic jwt-secret --from-literal=JWT_KEY=****</p>
