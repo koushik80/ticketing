@@ -7,6 +7,12 @@
 <p align="left">skaffold dev</p>
 <p align="left">npm run dev</p>
 
+
+<p align="left">base64-encoded Secret command</p>
+
+` echo -n 'your_secret' | base64 `
+
+<p align="left">kubectl apply -f file_name.yaml</p>
 <p align="left">kubectl get secrets</p>
 <p align="left">kubectl create secret generic jwt-secret --from-literal=JWT_KEY=****</p>
 <h3 align="left">Supporting links:</h3>
