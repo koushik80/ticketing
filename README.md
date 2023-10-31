@@ -14,3 +14,4 @@
 [Docker + Mongo](https://hub.docker.com/_/mongo) <br />
 [BASE64](https://www.base64decode.org/)  <br />
 [JWT](https://jwt.io/)  <br />
+[npm](https://www.npmjs.com/package/node-nats-streaming) <br />
