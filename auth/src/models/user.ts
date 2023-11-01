@@ -53,7 +53,6 @@ userSchema.pre('save', async function(done) {
 
 userSchema.statics.build = (attrs: UserAttrs) => {
   return new User(attrs);
-
 };
 
 const User = mongoose.model<UserDoc, UserModel>('User', userSchema);
