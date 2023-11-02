@@ -7,6 +7,21 @@
 <p align="left">skaffold dev</p>
 <p align="left">npm run dev</p>
 
+<h4 align="left">nats-test config:</h4>
+
+<p align="left">from root ticketing directory</p>
+
+` kubectl get pods `
+
+` kubectl port-forward nats-depl-XXXXXX-XXXXXX 4222:4222 `
+
+<p align="left">from nats-test directory</p>
+
+` npm run listener `
+
+` npm run publish `
+
+<br />
 
 <p align="left">base64-encoded Secret command</p>
 
