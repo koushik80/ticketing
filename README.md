@@ -14,6 +14,7 @@
 ` kubectl get pods `
 
 ` kubectl port-forward nats-depl-XXXXXX-XXXXXX 4222:4222 `
+` kubectl port-forward nats-depl-XXXXXX-XXXXXX 8222:8222 `
 
 <p align="left">from nats-test directory</p>
 
